@@ -14,6 +14,17 @@ public class CommunicationConsole {
 		String couleur = scanner.next();
 		TestCouleur c = new TestCouleur(couleur);
 		c.afficheCouleur();
+		System.out.println("Entrer votre nom majuscule ou miniscule mais ne contient pas des caractères !!");
+		String name = scanner.next();
+		char[] charArray = name.toCharArray();
+		for(char e: charArray) {
+			if(Lettre.conversionLettreToMajuscule(e)==' ')
+				System.out.println("caractère invalide !!");
+				else 
+				//System.out.println(Lettre.conversionLettreToMajuscule(c));
+				System.out.println(e+" : "+Lettre.afficheLettre(Lettre.conversionLettreToMajuscule(e)));
+		}
+		
 		
 	}
 }

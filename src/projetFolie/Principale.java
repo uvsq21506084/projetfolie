@@ -7,19 +7,15 @@ public class Principale {
 		//TestCouleur c = new TestCouleur(Couleur.ORANGE);
 		//a.afficheAge();
 		//c.afficheCouleur();
-		String foo = "Helloworld";
+		String foo = "Loubna%";
 		char[] charArray = foo.toCharArray();
 		for(char c: charArray) {
 			if(Lettre.conversionLettreToMajuscule(c)==' ')
 				System.out.println("caractère invalide !!");
 				else 
 				//System.out.println(Lettre.conversionLettreToMajuscule(c));
-				Lettre.afficheLettre(c);
+				System.out.println(c+" : "+Lettre.afficheLettre(Lettre.conversionLettreToMajuscule(c)));
 		}
-		
-		
-
-		
 		
 
 	}

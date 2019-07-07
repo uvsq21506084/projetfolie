@@ -7,87 +7,92 @@ public class Lettre {
 		l = c;
 	}
 
-	static public void afficheLettre(char l) {
+	static public String afficheLettre(char l) {
+		String s;
 		switch (l) {
 		case 'A':
-			System.out.println("Abeille sans reine, ruche perdue.");
+			s="Abeille sans reine, ruche perdue.";
 			break;
 		case 'B':
-			System.out.println("Bateau arrêté ne gagne rien.");
+			s="Bateau arrêté ne gagne rien.";
 			break;
 		case 'C':
-			System.out.println("Cela paraît comme le nez au milieu de la figure.");
+			s="Cela paraît comme le nez au milieu de la figure.";
 			break;
 		case 'D':
-			System.out.println("Dans la ville : mon nom ; hors de la ville : mon habit.");
+			s="Dans la ville : mon nom ; hors de la ville : mon habit.";
 			break;
 		case 'E':
-			System.out.println("Ecoute ce qui est bien dit, même venant d'un ennemi.");
+			s="Ecoute ce qui est bien dit, même venant d'un ennemi.";
 			break;
 		case 'F':
-			System.out.println("Fais aujourd'hui ce qui peut être fait demain.");
+			s="Fais aujourd'hui ce qui peut être fait demain.";
 			break;
 		case 'G':
-			System.out.println("Gagne assez qui sort de procès.");
+			s="Gagne assez qui sort de procès.";
 			break;
 		case 'H':
-			System.out.println("Hasard qui tocque, femme qui pêle n'est pas morte.");
+			s="Hasard qui tocque, femme qui pêle n'est pas morte.";
 			break;
 		case 'I':
-			System.out.println("Il a le mal saint Genou.");
+			s="Il a le mal saint Genou.";
 			break;
 		case 'J':
-			System.out.println("Jamais à bon chien il ne vient bon os.");
+			s="Jamais à bon chien il ne vient bon os.";
 			break;
 		case 'K':
-			System.out.println("Kaka");
+			s="Kaka";
 			break;
 		case 'L':
-			System.out.println("La bonne renommée reste couchée, la mauvaise court les chemins.");
+			s="La bonne renommée reste couchée, la mauvaise court les chemins.";
 			break;
 		case 'M':
-			System.out.println("Main serrée, cœur étroit.");
+			s="Main serrée, cœur étroit.";
 			break;
 		case 'N':
-			System.out.println("N'achète pas la maison avant d'avoir acheté le voisin.");
+			s="N'achète pas la maison avant d'avoir acheté le voisin.";
 			break;
 		case 'O':
-			System.out.println("Octobre est bon s'il est de saison.");
+			s="Octobre est bon s'il est de saison.";
 			break;
 		case 'P':
-			System.out.println("Pain dérobé réveille l'appétit.");
+			s="Pain dérobé réveille l'appétit.";
 			break;
 		case 'Q':
-			System.out.println("Quand décroîtra la lune, ne sème chose aucune.");
+			s="Quand décroîtra la lune, ne sème chose aucune.";
 			break;
 		case 'R':
-			System.out.println("Réduis tes désirs et tu augmentera ta santé.");
+			s="Réduis tes désirs et tu augmentera ta santé.";
 			break;
 		case 'S':
-			System.out.println("Sagesse ne s'apprend pas dans les livres toujours ; malice s'apprend tous les jours.");
+			s="Sagesse ne s'apprend pas dans les livres toujours ; malice s'apprend tous les jours.";
 			break;
 		case 'T':
-			System.out.println("Tant de gens, tant de guise.");
+			s="Tant de gens, tant de guise.";
 			break;
 		case 'U':
-			System.out.println("Un ami c'est une route, un ennemi c'est un mur.");
+			s="Un ami c'est une route, un ennemi c'est un mur.";
 			break;
 		case 'V':
-			System.out.println("Va lentement, tu iras plus loin.");
+			s="Va lentement, tu iras plus loin.";
 			break;
 		case 'W':
-			System.out.println("What the fuck ! ");
+			s="What the fuck ! ";
 			break;
 		case 'X':
-			System.out.println("Xavier ! t'es pas xavier par hasard");
+			s="Xavier ! t'es pas xavier par hasard";
 			break;
 		case 'Y':
-			System.out.println("Y penser sans cesse ne labourera pas le champ.");
+			s="Y penser sans cesse ne labourera pas le champ.";
 			break;
 		case 'Z':
-			System.out.println("Zut ! le week-end passe vite");
+			s="Zut ! le week-end passe vite";
 			break;
+		default : 
+			s = "cette lettre est invalide ne déconnez pas !";		
 		}
+		return s;
+		
 	}
 
 	static public char conversionLettreToMajuscule(char c) {
